@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(10, 55px);
+    grid-template-rows: repeat(10, 55px);
+}
+.v, .h, .x, .s {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}
+.v {
+    background-color: red;
+}
+.h {
+    background-color: green;
+}
+.x {
+    background-color: blue;
+}
+.s {
+    background: yellow;
+}
+.vidas {
+    text-align: right;
+    position: absolute;
+    top: 20px;
+    left: 42%;
+}
+.ataque2x {
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    right: 42%;
+}
